@@ -1,0 +1,151 @@
+.inbox {
+  background-color: $inbox-background-color;
+  display: flex;
+  flex-direction: column;
+  &__image {
+    margin: auto;
+    margin-left: 15px;
+    margin-top: 50px;
+    margin-right: 15px;
+
+    @include for-large-up {
+      margin: 0;
+      margin-top: 142px;
+      margin-left: 193px;
+      margin-right: 782px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__slogan {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    opacity: 60%;
+    margin-top: 15px;
+
+    @include for-large-up {
+      display: flex;
+      margin: 0;
+      margin-left: 284px;
+      margin-right: 853px;
+      margin-top: 15px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: $color-orange;
+    margin: 0;
+    margin-top: 32px;
+    margin-left: 15px;
+
+    @include for-large-up {
+      margin-right: 465px;
+      margin: 0;
+      margin-left: 810px;
+      margin-top: -600px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    margin: 0;
+    margin-top: 17px;
+    margin-left: 15px;
+
+    @include for-large-up {
+      margin-left: 808px;
+    }
+  }
+  &__description {
+    width: 290px;
+    height: 205px;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0;
+    margin-top: 18px;
+    margin-left: 15px;
+
+    @include for-large-up {
+      margin-left: 810px;
+    }
+  }
+}
+.coment {
+  background-color: $color-white;
+  margin: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+  @include for-large-up {
+    margin-left: 782px;
+    margin-bottom: 116px;
+  }
+
+  &__main {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  &__main-bold {
+    font-weight: 700;
+  }
+
+  &__line {
+    width: 290px;
+    height: 4px;
+    background-color: $color-light-blue;
+    width: 100%;
+  }
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  // margin-bottom: 28px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__main-info {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 60%;
+  }
+
+  &__photo {
+    margin-bottom: 52px;
+    margin-top: 28px;
+    margin-right: 11px;
+
+    @include for-large-up {
+      margin-bottom: 26px;
+    }
+  }
+}
